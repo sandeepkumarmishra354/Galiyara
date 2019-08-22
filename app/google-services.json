@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1025414452478",
+    "firebase_url": "https://galiyara.firebaseio.com",
+    "project_id": "galiyara",
+    "storage_bucket": "galiyara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025414452478:android:2216a197f8b01293",
+        "android_client_info": {
+          "package_name": "com.galiyara.sandy.galiyara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025414452478-psc7sn2j1f23t7v1qufhtkntk6ratp26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsmPampej6b8xDxBfhx9oDwBGLZRdFfeM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

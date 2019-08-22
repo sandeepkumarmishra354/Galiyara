@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.galiyara.sandy.galiyara"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+dependencies {
+    def room_version = '2.0.0-beta01'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
+    implementation 'androidx.cardview:cardview:1.0.0-beta01'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.4'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0-beta01'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-ads:17.2.0'
+    implementation 'com.google.android.gms:play-services-ads:17.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0-beta01'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.0.0-beta01'
+    //room
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+    implementation 'com.github.garretyoder:Colorful:2.3.4'
+    implementation 'id.zelory:compressor:2.1.0'
+
+    implementation 'com.afollestad.material-dialogs:files:2.8.1'
+    implementation 'jp.wasabeef:glide-transformations:4.0.0'
+    //implementation 'com.google.android.gms:play-services-vision:17.0.2'
+
+    implementation 'commons-io:commons-io:2.6'
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0-beta01"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}

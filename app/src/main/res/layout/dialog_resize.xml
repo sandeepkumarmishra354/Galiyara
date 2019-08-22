@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/heading"
+        android:text="@string/resize_image"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/whiteColor"
+        android:background="?attr/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/resizeSpinner"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/resize_array"
+        android:prompt="@string/resize_prompt" />
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/widthLayout"
+            android:layout_width="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/chooseWidth"
+                android:hint="@string/width"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.2"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/heightLayout"
+            android:layout_width="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/chooseHeight"
+                android:hint="@string/height"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.2"
+                android:layout_height="wrap_content"
+                tools:ignore="Autofill" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resizeCancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/del_dialog_cancel" />
+
+        <Button
+            android:id="@+id/resizeOkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorAccent"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/menu_resize" />
+    </LinearLayout>
+
+</LinearLayout>

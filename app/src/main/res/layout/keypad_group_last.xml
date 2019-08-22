@@ -1,0 +1,39 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/doneButton"
+        android:background="@drawable/round_edit_box"
+        android:text="Go"
+        android:enabled="false"
+        android:textSize="14sp"
+        android:textColor="@color/whiteColor"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:id="@+id/button0"
+        android:text="0"
+        android:textSize="22sp"
+        android:background="@drawable/round_button"
+        android:textColor="@color/whiteColor"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/clearButton"
+        android:src="@drawable/ic_clear_white"
+        android:background="@drawable/round_edit_box"
+        android:enabled="false"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+</LinearLayout>

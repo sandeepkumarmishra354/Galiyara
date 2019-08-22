@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/heading"
+        android:text="@string/choose_an_action"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/whiteColor"
+        android:background="?attr/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/resButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/restore"
+            android:textColor="?attr/colorAccent"
+            android:drawableTop="@drawable/ic_restore_grey" />
+
+        <TextView
+            android:text="@string/or"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/delButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/del_dialog_ok"
+            android:textColor="?attr/colorAccent"
+            android:drawableTop="@drawable/ic_delete_grey" />
+    </LinearLayout>
+</LinearLayout>

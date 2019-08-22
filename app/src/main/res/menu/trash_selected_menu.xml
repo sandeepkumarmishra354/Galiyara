@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sAllSelectedMenuItem"
+        android:title="@string/menu_select_all"
+        android:icon="@drawable/ic_done_all"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/restoreMenuItem"
+        android:title="Restore"
+        android:icon="@drawable/ic_restore"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/deleteSelectedMenuItem"
+        android:title="@string/menu_delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom"/>
+</menu>

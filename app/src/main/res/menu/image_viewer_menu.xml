@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/shareMenuItem"
+        android:title="@string/menu_share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/deleteMenuItem"
+        android:title="@string/menu_delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/slideShowMenuItem"
+        android:title="@string/menu_slide_show"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/renameMenuItem"
+        android:title="@string/menu_rename"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/setAsMenuItem"
+        android:title="@string/menu_set_as"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cropMenuItem"
+        android:title="@string/menu_crop"
+        app:showAsAction="never" />
+    <item
+        app:showAsAction="never"
+        android:title="@string/menu_more">
+        <menu>
+            <item
+                android:id="@+id/moveMenuItem"
+                android:title="@string/menu_move"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/copyMenuItem"
+                android:title="@string/menu_copy"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/rotateLMenuItem"
+                android:title="@string/menu_rotate_l"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/rotateRMenuItem"
+                android:title="@string/menu_rotate_r"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/resizeOption"
+                android:title="@string/menu_resize"
+                app:showAsAction="never">
+            </item>
+            <item
+                android:id="@+id/infoMenuItem"
+                android:title="@string/menu_info"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sAllSelectedMenuItem"
+        android:title="@string/menu_select_all"
+        android:icon="@drawable/ic_done_all"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/shareSelectedMenuItem"
+        android:title="@string/menu_share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/deleteSelectedMenuItem"
+        android:title="@string/menu_delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/moveSelectedMenuItem"
+        android:title="@string/menu_move"
+        android:icon="@drawable/ic_move"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/copySelectedMenuItem"
+        android:title="@string/menu_copy"
+        android:icon="@drawable/ic_copy"
+        app:showAsAction="never" />
+</menu>

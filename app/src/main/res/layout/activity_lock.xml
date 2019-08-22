@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/lockLinearLayout"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lockMsg"
+            android:textSize="18sp"
+            android:text="@string/enter_pin"
+            android:textColor="@color/whiteColor"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+            <EditText
+                android:id="@+id/lockEditText"
+                android:hint="******"
+                android:padding="8dp"
+                android:enabled="false"
+                android:letterSpacing="0.5"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:background="@drawable/round_edit_box"
+                android:textColor="@color/whiteColor"
+                android:textColorHint="@color/whiteColor"
+                android:maxLength="6"
+                android:password="true"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                tools:ignore="Autofill,HardcodedText" />
+        </FrameLayout>
+
+        <include layout="@layout/lock_keypad" />
+
+        <ImageView
+            android:id="@+id/fingerPrintImg"
+            android:alpha="0.0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_fingerprint_white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

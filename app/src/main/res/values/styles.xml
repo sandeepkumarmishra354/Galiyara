@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.DarkBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/flutter_blue</item>
+        <item name="colorPrimaryDark">@color/flutter_blue</item>
+        <item name="colorAccent">@color/flutter_blue</item>
+    </style>
+    <!-- Menu popup dark background -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">@color/whiteColor</item>
+        <item name="android:textColorSecondary">@color/whiteColor</item>
+    </style>
+</resources>

@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name" translatable="false">Galiyara</string>
+    <string name="album_img_list">album image list</string>
+    <string name="setting_activity_title">Settings</string>
+    <string name="trash_activity_title">Trash</string>
+    <string name="about_activity_title">About</string>
+
+    <string name="heading_security">Security</string>
+    <string name="heading_general">General</string>
+
+    <string name="item_app_lock">App lock</string>
+    <string name="item_app_lock_subtitle">setup lock for main app</string>
+    <string name="item_hidden">Show hidden</string>
+    <string name="item_hidden_subtitle">view hidden files</string>
+    <string name="item_hq_mode">Image HQ mode</string>
+    <string name="item_hq_mode_subtitle">view image in high quality</string>
+    <string name="item_move_trash">Move to trash</string>
+    <string name="item_move_trash_subtitle">move deleted files to trash</string>
+    <string name="item_enable_dark">Enable dark mode</string>
+    <string name="item_enable_dark_subtitle">change base color of app</string>
+    <string name="item_primary_color">Primary color</string>
+    <string name="item_primary_color_subtitle">main color of ui</string>
+    <string name="item_accent_color">Accent color</string>
+    <string name="item_accent_color_subtitle">used to tint widgets</string>
+    <string name="item_choose_lang">Choose language</string>
+    <string name="item_choose_lang_subtitle">Change app language</string>
+
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिंदी</string>
+
+    <string name="menu_albums">Albums</string>
+    <string name="menu_view_all">View all</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_trash">Trash</string>
+    <string name="menu_about">About</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_rename">Rename</string>
+    <string name="menu_move">Move</string>
+    <string name="menu_copy">Copy</string>
+    <string name="menu_rotate_l">Rotate left</string>
+    <string name="menu_rotate_r">Rotate right</string>
+    <string name="menu_set_as">Set as</string>
+    <string name="menu_crop">Crop</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_select_all">Select all</string>
+
+    <string name="photos">Photos</string>
+
+    <string name="del_dialog_msg">This will remove the file.</string>
+    <string name="del_dialog_ok">Delete</string>
+    <string name="del_dialog_cancel">Cancel</string>
+    <string name="rename_dialog_title">Rename</string>
+    <string name="info_dialog_title">Info</string>
+    <string name="info_dialog_path">Path:</string>
+    <string name="info_dialog_type">Type:</string>
+    <string name="info_dialog_iso">ISO:</string>
+    <string name="info_dialog_size">Size:</string>
+    <string name="info_dialog_resolution">Resolution:</string>
+    <string name="info_dialog_device">Device:</string>
+    <string name="info_dialog_date">Date:</string>
+    <string name="info_dialog_ok">got it</string>
+
+    <string name="app_detail_msg">Galiyara is an open source project. Any one who is interested can contribute to this project. App source code is available on github.</string>
+    <string name="restart_app">Please restart the app</string>
+
+    <string name="enter_pin">Enter your pin</string>
+    <string name="wrong_pass">Password does not match</string>
+    <string name="finger_not_match">Not recognised</string>
+    <string name="password_heading">Set password</string>
+    <string name="choose_password">choose password</string>
+    <string name="repeat_password">repeat password</string>
+    <string name="show_password">show password</string>
+    <string name="disable">Disable</string>
+    <string name="enable">Enable</string>
+    <string name="choose_an_action">Choose an action</string>
+    <string name="restore">Restore</string>
+    <string name="or">or</string>
+    <string name="copied">Copied</string>
+    <string name="moved">Moved</string>
+    <string name="deleted">Deleted</string>
+    <string name="restored">Restored</string>
+
+    <string name="add_app_id" translatable="false">ca-app-pub-2824199923320927~5983380612</string>
+    <string name="interstitialAddUnitId" translatable="false">ca-app-pub-2824199923320927/8390052106</string>
+    <string name="testId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="menu_slide_show">Slide show</string>
+    <string name="stop_slide_show">Stop slide show</string>
+    <string name="accent_color">Accent color</string>
+    <string name="primary_color">Primary color</string>
+    <string name="source_code">source code</string>
+    <string name="bug_report">bug report</string>
+
+    <string name="permission_denied">Permission denied… close and launch app again</string>
+
+    <string name="crop_image_activity_title" translatable="false"> </string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="crop_image_menu_flip">Flip</string>
+    <string name="crop_image_menu_flip_horizontally">Flip horizontally</string>
+    <string name="crop_image_menu_flip_vertically">Flip vertically</string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="menu_resize">Resize</string>
+    <string name="menu_more">More</string>
+    <string name="menu_custom">Custom</string>
+
+    <string name="msg_format">resize image saved to %s</string>
+
+    <string name="resize_prompt">Choose type</string>
+    <string name="resize_image">Resize image</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="form_photo">Form photo</string>
+    <string-array name="resize_array">
+        <item>@string/form_photo</item>
+        <item>@string/menu_custom</item>
+    </string-array>
+
+    <string name="password_length_error">password must be 6 digit long</string>
+    <string name="password_not_match">password does not match</string>
+    <string name="width_empty_error">"width must not be empty"</string>
+    <string name="width_zero_error">width must not be 0</string>
+    <string name="height_empty_error">height must not be empty</string>
+    <string name="height_zero_error">height must not be 0</string>
+    <string name="crop_fail">Crop fail</string>
+    <string name="crop_success">Crop success</string>
+    <string name="rename_fail">Rename fail</string>
+    <string name="rename_success">Rename succeed</string>
+    <string name="move_fail">Move fail</string>
+    <string name="move_success">Move succeed</string>
+    <string name="copy_fail">Copy failed</string>
+    <string name="copy_success">Copy succeed</string>
+    <string name="share_fail">Share failed</string>
+    <string name="new_name">new name</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+</resources>

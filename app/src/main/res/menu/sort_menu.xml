@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sortMenuItem"
+        android:title="Sort"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_sort_white">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sortName"
+                    android:checked="true"
+                    android:title="Name"/>
+                <item
+                    android:id="@+id/sortDate"
+                    android:title="@string/info_dialog_date"/>
+                <item
+                    android:id="@+id/sortSize"
+                    android:title="@string/info_dialog_size"/>
+                <item
+                    android:id="@+id/sortAsc"
+                    android:checkable="true"
+                    android:title="Ascending"/>
+            </group>
+        </menu>
+    </item>
+</menu>
